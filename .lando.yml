@@ -1,0 +1,8 @@
+name: my-test-site
+recipe: laravel
+config:
+  webroot: ./public
+  php: '7.1'
+  via: apache
+  database: mariadb:10.1
+  xdebug: true
