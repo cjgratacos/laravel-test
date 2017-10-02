@@ -11,6 +11,13 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/working', function(){
+    $tasks = DB::table('tasks')->get();
+    return $tasks;
+    // return view('app.app');
 });
