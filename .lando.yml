@@ -7,6 +7,10 @@ config:
   database: mariadb:10.3
   xdebug: true
 
+proxy:
+  appserver:
+    - laravel.lndo.site
+    
 services:
   database:
     portforward: 3307
